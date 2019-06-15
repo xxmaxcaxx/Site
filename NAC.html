@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pentatlo</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="meucss.css">
+		
+	</head>
+	<body>
+		
+		<main class="container">
+			<section>
+				<h2>Pentatlo</h2>
+				<table>
+					<tr>
+						<th>Atletas</th>
+						<th>Esgrima</th>
+						<th>Natacao</th>
+						<th>Hipismo</th>
+						<th>Tiro</th>
+						<th>Corrida</th>
+						<th>Pontuacao Final</th>
+						<th>Classificacao</th>
+					</tr>
+					<tr class="pessoa">
+						<td class="info-nome"> Atleta 1 </td>
+						<td class="info-esg" id="esg-1">162</td>
+						<td class="info-nat" id="nat-1">178</td>
+						<td class="info-hip" id="hip-1">222</td>
+						<td class="info-tiro" id="tiro-1">333</td>
+						<td class="info-cor" id="cor-1">450</td>
+						<td class="info-pf" id="pf-1"></td>
+						<td class="info-situacao" id="situacao-1"></td>						
+					</tr>
+					<tr class="pessoa">
+						<td class="info-nome"> Atleta 2 </td>
+						<td class="info-esg" id="esg-1">621</td>
+						<td class="info-nat" id="nat-1">178</td>
+						<td class="info-hip" id="hip-1">332</td>
+						<td class="info-tiro" id="tiro-1">412</td>
+						<td class="info-cor" id="cor-1">532</td>
+						<td class="info-pf" id="pf-1"></td>
+						<td class="info-situacao" id="situacao-1"></td>						
+					</tr>
+					<tr class="pessoa">
+						<td class="info-nome"> Atleta 3 </td>
+						<td class="info-esg" id="esg-1">602</td>
+						<td class="info-nat" id="nat-1">178</td>
+						<td class="info-hip" id="hip-1">257</td>
+						<td class="info-tiro" id="tiro-1">756</td>
+						<td class="info-cor" id="cor-1">357</td>
+						<td class="info-pf" id="pf-1"></td>
+						<td class="info-situacao" id="situacao-1"></td>						
+					</tr>
+				</table>
+				
+				<button id="calcula-pf" class="botao">Calcular Pontos</button>
+			
+			
+			</section>
+			<section>
+				<h2>Adicionar novo atleta</h2>	
+				<form>
+					<fieldset>
+						<label for="nome">Nome:</label>
+						<input id="nome" type="text" placeholder="digite o nome do atleta">
+					</fieldset>
+					<fieldset class="campo-medio">
+						<label for="esg">Esgrima:</label>
+						<input id="esg" type="text" placeholder="Digite os pontos do atleta">
+					</fieldset>
+					<fieldset class="campo-medio">
+						<label for="nat">Natação:</label>
+						<input id="nat" type="text" placeholder="Digite os pontos do atleta">
+					</fieldset>
+					<fieldset class="campo-medio">
+						<label for="hip">Hipismo:</label>
+						<input id="hip" type="text" placeholder="Digite os pontos do atleta">
+					</fieldset>
+					<fieldset class="campo-medio">
+						<label for="tiro">Tiro:</label>
+						<input id="tiro" type="text" placeholder="Digite os pontos do atleta">
+					</fieldset>
+					<fieldset class="campo-medio">
+						<label for="cor">Corrida:</label>
+						<input id="cor" type="text" placeholder="Digite os pontos do atleta">
+					</fieldset>
+					<button id="adicionar-pessoa" class="botao bto-principal">Adicionar</button>
+				</form>
+			</section>
+		</main>
+		
+		<script src="calculaPontos.js"></script>
+		<script src="adicionapessoa.js"></script>
+		
+	</body>
+</html>
